@@ -5,19 +5,19 @@ import {StackScreenProps} from '@react-navigation/stack';
 
 interface Props extends StackScreenProps<any, any> {}
 
-const LoginScreen = ({navigation}: Props) => {
+const LessonsScreen = ({navigation}: Props) => {
   return (
     <View>
-      <Text>LoginScreen</Text>
+      <Text>LessonsScreen</Text>
       <Button
         mode="contained"
         onPress={() => {
-          navigation.navigate('MainMenu');
+          navigation.navigate('Topics');
         }}>
-        Login
+        Topics
       </Button>
     </View>
   );
 };
 
-export default LoginScreen;
+export default LessonsScreen;
